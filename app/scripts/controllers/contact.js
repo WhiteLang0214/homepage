@@ -1,6 +1,16 @@
 'use strict';
-
+/**
+ * @ngdoc function
+ * @name homepageApp.controller:ContactCtrl
+ * @description
+ * # ContactCtrl
+ * Controller of the homepageApp
+ */
 angular.module('homepageApp')
-  .controller('ContactCtrl',function() {
-    this.awesomeThings=[];
-  })
+  .controller('ContactCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  });
