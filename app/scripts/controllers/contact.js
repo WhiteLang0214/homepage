@@ -9,8 +9,8 @@
 angular.module('homepageApp')
   .controller('ContactCtrl', function () {
     this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
+      'about',
+      'hghg',
       'Karma'
     ];
   });
