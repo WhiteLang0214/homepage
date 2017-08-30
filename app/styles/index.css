@@ -20,5 +20,11 @@ body {
   height: 90px;
   line-height: 90px;
   font-size: 20px;
+  color: #696969;
+  font-weight: 500;
   cursor: pointer;
+}
+.left ul li.active {
+  background: #f6f6f6;
+  color: #fe5c67;
 }
