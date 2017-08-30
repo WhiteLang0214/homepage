@@ -15,7 +15,6 @@ body {
   background-color: #fff;
 }
 .left ul li {
-  padding-left: 90px;
   width: 100%;
   height: 90px;
   line-height: 90px;
@@ -24,7 +23,16 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-.left ul li.active {
+.left ul li a {
+  display: inline-block;
+  padding-left: 90px;
+  width: 100%;
+  height: 100%;
+}
+.left ul li a.active {
   background: #f6f6f6;
   color: #fe5c67;
 }
+a:link {
+  text-decoration: none;
+  }

@@ -37,6 +37,11 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/home', {
+        templateUrl: 'views/left/home.html',
+        controller: 'homeCtrl',
+        controllerAs: 'home'
+      })
       .otherwise({
         redirectTo: '/'
       });

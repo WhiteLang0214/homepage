@@ -36,7 +36,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <!-- <a class="navbar-brand" href="#/">郎雪</a> -->
+            <a class="navbar-brand" href="#/">郎雪</a>
             <a href="/"><img src="images/b_logo.png" alt="langxue"></a>
           </div>
 
@@ -52,12 +52,12 @@
       </div>
     </div>
 
-    <div class="left">
+    <div class="left" ng-controller="leftCtrl">
         <ul>
-          <li class="active">首页</li>
-          <li>考勤管理</li>
-          <li>分析管理</li>
-          <li>公司设置</li>
+          <li ng-click="isActive(1);"><a href="#/home" class="{{i==1?'active':''}}">首页</a></li>
+          <li ng-click="isActive(2);"><a href="#/kaoqin" class="{{i==2?'active':''}}">考勤管理</a></li>
+          <li ng-click="isActive(3);"><a href="#/fenxi" class="{{i==3?'active':''}}">分析管理</a></li>
+          <li ng-click="isActive(4);"><a href="#/settings" class="{{i==4?'active':''}}">公司设置</a></li>
         </ul>
     </div>
 
@@ -103,7 +103,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/left.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/left/home.js"></script>
         <!-- endbuild -->
 </body>
 </html>
